@@ -66,3 +66,5 @@ plugin :tmp_restart
 # https://github.com/puma/puma/pull/1690
 #
 raise_exception_on_sigterm false
+
+workers ENV.fetch("WEB_CONCURRENCY") { 0 }

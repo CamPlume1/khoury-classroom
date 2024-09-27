@@ -16,7 +16,7 @@ Rails.application.configure do
       Bullet.raise = true if Rails.env.test?
 
       # Need to eager load :users which is causing it to complain about the join table
-      Bullet.add_whitelist type: :unused_eager_loading, class_name: "Organization", association: :organizations_users
+      Bullet.add_safelist type: :unused_eager_loading, class_name: "Organization", association: :organizations_users
     end
   end
 end
