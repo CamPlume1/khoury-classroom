@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "@github/details-menu-element": "^1.0.6",
+    "@popperjs/core": "^2.11.8",
     "@webcomponents/custom-elements": "1.2.4",
+    "bootstrap": "5.1",
     "clipboard": "^1.7.1",
     "details-element-polyfill": "2.3.1",
     "dragula": "3.7.1",
@@ -20,6 +22,5 @@
     "transliteration": "^1.6.2",
     "webcomponents.js": "^0.7.24",
     "whatwg-fetch": "^2.0.3"
-  },
-  "devDependencies": {}
+  }
 }
